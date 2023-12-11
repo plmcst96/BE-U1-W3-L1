@@ -48,16 +48,16 @@ SELECT first_name, last_name FROM client WHERE year_birth = 1982
 
 ------------------> ESERCIZIO 3 <------------------------
 
-SELECT number_invoice, tipology, iva FROM invoices WHERE iva = 22
+SELECT number_invoice, tipology, iva COUNT(*) FROM invoices WHERE iva = 22
 
 ------------------> ESERCIZIO 4 <------------------------
 
-SELECT * FROM products WHERE date_start BETWEEN '01-01-2017' AND '01-12-2017' 
+SELECT * FROM products WHERE date_start BETWEEN '01-01-2017' AND '31-12-2017' 
   AND in_production = true OR in_market = true
 
 ------------------> ESERCIZIO 5 <------------------------
 
-SELECT amount, id_client FROM invoices WHERE amount < 1000
+SELECT * FROM invoices JOIN client ON invoices.id_cliente = client.number_client WHERE invoices.amount < 1000
 
 ------------------> ESERCIZIO 6 <------------------------
 
