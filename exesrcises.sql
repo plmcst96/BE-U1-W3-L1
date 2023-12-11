@@ -1,4 +1,4 @@
-------------------> CREAZIONR TABELLE <------------------------
+------------------> CREAZIONE TABELLE <------------------------
 
 CREATE TABLE public.client (
     number_client integer NOT NULL,
